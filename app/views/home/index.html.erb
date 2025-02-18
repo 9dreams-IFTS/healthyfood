@@ -36,55 +36,91 @@
     </nav>
 
 
-  <div class='flex flex-row justify-center w-full'>
-    <div class='flex flex-col w-4/12 px-8 bg-gradient-to-b from-white to-[#439953] rounded-l-3xl'>
-       <h1 class='text-6xl mt-15 mb-8 font-extrabold'>Scopri tutti i nostri prodotti!</h1>
-       <h1 class='text-sm text-gray-500 mb-8'>Su questo sito troverete le migliori proposte per i vostri piatti ideali.Ricette composte da  ingredienti freschi da fornitori locali, consegnati a casa tua.</h1>
-       <div class='flex flex-row gap-10 mb-10' >
-       <button class='w-auto flex flex-row items-center gap-5'>
-        <img
-                src="images/leo.jpg"
-                class="w-17 rounded-full "
-              />
-              <h1>Leonardo Pavan</h1>
-       </button>
-       <button class='w-auto flex flex-row items-center gap-5'>
-        <img
-                src="images/jack.jpg"
-                class="w-17 rounded-full"
-              />
-              <h1>Giacomo Pistolato</h1>
-       </button>
+  <div class='flex flex-col md:flex-row justify-center w-full px-5'>
+    <div class='flex flex-col w-full md:w-6/12 px-8 bg-gradient-to-b from-white to-[#439953] rounded-t-3xl md:rounded-l-3xl md:rounded-t-none'>
+       <h1 class='text-4xl md:text-6xl mt-10 mb-8 font-extrabold text-center md:text-left'>Scopri tutti i nostri prodotti!</h1>
+       <h1 class='text-sm text-gray-500 mb-8 text-center md:text-left'>Su questo sito troverete le migliori proposte per i vostri piatti ideali. Ricette composte da ingredienti freschi da fornitori locali, consegnati a casa tua.</h1>
+       <div class='flex flex-col md:flex-row gap-5 md:gap-10 mb-10 items-center md:items-start'>
+           <button class='w-auto flex flex-row items-center gap-5'>
+               <img src='images/leo.jpg' class='w-16 rounded-full' />
+               <h1>Leonardo Pavan</h1>
+           </button>
+           <button class='w-auto flex flex-row items-center gap-5'>
+               <img src='images/jack.jpg' class='w-16 rounded-full' />
+               <h1>Giacomo Pistolato</h1>
+           </button>
        </div>
-      <div class='flex flex-row gap-10 bg-black w-48 p-4 rounded-2xl mb-18'>
-       <button class='w-auto flex flex-row items-center'>
-              <h1 class='text-white'>Chi Siamo</h1>
-       </button>   
-       <img src='https://lh5.googleusercontent.com/proxy/WPBwGJSa_1Gz1zCkX3SNszHoIxPfBQ3F3WwEK_e_caVTyQli96XvjRogXvBNJjnz3_Baqi-FZKs4iyVcvUvCI3ULoUIpudY8Z_SywPiEqnQ-cl23xfr3zt1kT_WRnJidiwSMY2RNVpjA9g' class='w-7' />
+       <div class='flex flex-row gap-10 bg-black w-48 p-4 rounded-2xl mb-10 mx-auto md:mx-0'>
+           <button class='w-auto flex flex-row items-center'>
+               <h1 class='text-white'>Chi Siamo</h1>
+           </button>   
+           <img src='https://lh5.googleusercontent.com/proxy/WPBwGJSa_1Gz1zCkX3SNszHoIxPfBQ3F3WwEK_e_caVTyQli96XvjRogXvBNJjnz3_Baqi-FZKs4iyVcvUvCI3ULoUIpudY8Z_SywPiEqnQ-cl23xfr3zt1kT_WRnJidiwSMY2RNVpjA9g' class='w-7' />
        </div>
     </div>
-    <div class='w-4/12 immagine rounded-r-3xl'>
-     
+    <div class='w-full md:w-6/12 immagine rounded-b-3xl md:rounded-r-3xl md:rounded-b-none'>
     </div>
-  </div>
+</div>
   
-  <div class='flex flex-col justify-center items-center mt-15'>
-   <h1 class='font-extrabold text-4xl mb-10'>Tipi di Piatti</h1>
-    <div class='flex flex-row gap-10'>
-      <div class='flex flex-col w-4/12 bg-gradient-to-b from-white to-[#65bd75] rounded-3xl p-5'>
-      <img src='https://cdn3d.iconscout.com/3d/premium/thumb/lettuce-3d-icon-download-in-png-blend-fbx-gltf-file-formats--diet-natural-green-spinach-cabbage-vegetables-pack-icons-5220315.png?f=webp' class='w-48 mb-5'>
-      <h1 class='mx-auto text-lg mb-3'>Vegani</h1>
+  <div class='flex flex-col justify-center items-center mt-15 mb-25 px-5'>
+   <h1 class='font-extrabold text-4xl mb-10 text-center'>Tipi di Piatti</h1>
+    <div class='flex flex-wrap justify-center gap-10 w-full'>
+      <div class='flex flex-col w-full sm:w-5/12 md:w-4/12 bg-gradient-to-b from-white to-[#65bd75] rounded-3xl p-5'>
+        <img src='https://cdn3d.iconscout.com/3d/premium/thumb/lettuce-3d-icon-download-in-png-blend-fbx-gltf-file-formats--diet-natural-green-spinach-cabbage-vegetables-pack-icons-5220315.png?f=webp' class='w-48 mb-5 mx-auto'>
+        <h1 class='mx-auto text-lg mb-3 text-center'>Vegani</h1>
       </div>
-      <div class='flex flex-col  w-4/12 bg-gradient-to-b from-white to-[#992907] rounded-3xl p-5'>
-      <img src='https://cdn3d.iconscout.com/3d/premium/thumb/beef-steak-3d-icon-download-in-png-blend-fbx-gltf-file-formats--delicious-logo-ham-meat-dish-thanksgiving-pack-festival-days-icons-5624486.png?f=webp' class='w-48 mb-5'>
-      <h1  class='mx-auto text-lg mb-3'>Con Carne</h1>
+      <div class='flex flex-col w-full sm:w-5/12 md:w-4/12 bg-gradient-to-b from-white to-[#992907] rounded-3xl p-5'>
+        <img src='https://cdn3d.iconscout.com/3d/premium/thumb/beef-steak-3d-icon-download-in-png-blend-fbx-gltf-file-formats--delicious-logo-ham-meat-dish-thanksgiving-pack-festival-days-icons-5624486.png?f=webp' class='w-48 mb-5 mx-auto'>
+        <h1 class='mx-auto text-lg mb-3 text-center'>Con Carne</h1>
       </div>
-      <div class='flex flex-col  w-4/12 bg-gradient-to-b from-white to-[#c9ad62] rounded-3xl p-5'>
-      <img src='https://cdn3d.iconscout.com/3d/premium/thumb/sandwich-3d-illustration-download-in-png-blend-fbx-gltf-file-formats--delicious-logo-burger-breakfast-fast-food-pack-drink-illustrations-4396901.png' class='w-48 mb-5'>
-      <h1  class='mx-auto text-lg mb-3'>Classici</h1>
+      <div class='flex flex-col w-full sm:w-5/12 md:w-4/12 bg-gradient-to-b from-white to-[#c9ad62] rounded-3xl p-5'>
+        <img src='https://cdn3d.iconscout.com/3d/premium/thumb/sandwich-3d-illustration-download-in-png-blend-fbx-gltf-file-formats--delicious-logo-burger-breakfast-fast-food-pack-drink-illustrations-4396901.png' class='w-48 mb-5 mx-auto'>
+        <h1 class='mx-auto text-lg mb-3 text-center'>Classici</h1>
       </div>
     </div>
+</div>
+
+  <div class="flex flex-col items-center my-10 bg-gradient-to-b from-white to-[#439953]">
+  <h2 class="text-5xl font-bold text-black mb-4">Ricette in Evidenza</h2>
+  <p class="text-gray-600 mb-8 text-center max-w-2xl">
+    Le ricette più comprate dai nostri clienti, gli hanno soddisfatti grazie ai loro valori nutrizionali, i loro costi bassi e i tempi di preparazione brevi.
+  </p>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+    <!-- Card 1 -->
+    <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+      <img src="/images/baccala.jpg" alt="Ricetta 1" class="w-full h-150 object-cover">
+    </div>
+    <!-- Card 2 -->
+    <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+      <img src="/images/carzucca.jpg" alt="Ricetta 2" class="w-full h-150 object-cover">
+    </div>
+    <!-- Card 3 -->
+    <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+      <img src="/images/spinazucca.jpg" alt="Ricetta 3" class="w-full h-150 object-cover">
+    </div>
+    <!-- Card 4 -->
+    <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+      <img src="/images/burgher.jpg" alt="Ricetta 4" class="w-full h-150 object-cover">
+    </div>
   </div>
+
+  <button class="mt-15 mb-15 bg-black text-white px-6 py-3 rounded-full flex items-center gap-2 hover:bg-gray-800 transition">
+    Scopri tutte le ricette
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5l6 6-6 6m0-12l-6 6 6 6" />
+    </svg>
+  </button>
+</div>
+
+<div class="justify-center">   
+    <h2 class="text-5xl text-center font-bold text-black mb-4">Consegne a domicilio</h2>
+    
+    <img src="/images/deliver.png" alt="Ricetta 4" class="md:w-150 md:h-150 w-80 h-80 mx-auto mt-20 object-cover">
+    <p class="text-gray-600 mt-20 text-3xl text-center">
+    Consegna a domicilio gratuita, con tutti i servizi di consegne disponibili sul web!
+  </p>
+    
+</div>
 </div>
 
 
