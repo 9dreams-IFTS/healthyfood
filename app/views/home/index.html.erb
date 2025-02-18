@@ -42,7 +42,7 @@
        <h1 class='text-sm text-gray-500 mb-8 text-center md:text-left'>Su questo sito troverete le migliori proposte per i vostri piatti ideali. Ricette composte da ingredienti freschi da fornitori locali, consegnati a casa tua.</h1>
        <div class='flex flex-col md:flex-row gap-5 md:gap-10 mb-10 items-center md:items-start'>
            <button class='w-auto flex flex-row items-center gap-5'>
-               <img src='images/leo.jpg' class='w-16 rounded-full' />
+               <img src='https://seeklogo.com/images/E/elon-musk-logo-0914614CE5-seeklogo.com.png' class='w-16 rounded-full' />
                <h1>Leonardo Pavan</h1>
            </button>
            <button class='w-auto flex flex-row items-center gap-5'>
@@ -57,7 +57,7 @@
            <img src='https://lh5.googleusercontent.com/proxy/WPBwGJSa_1Gz1zCkX3SNszHoIxPfBQ3F3WwEK_e_caVTyQli96XvjRogXvBNJjnz3_Baqi-FZKs4iyVcvUvCI3ULoUIpudY8Z_SywPiEqnQ-cl23xfr3zt1kT_WRnJidiwSMY2RNVpjA9g' class='w-7' />
        </div>
     </div>
-    <div class='w-full md:w-6/12 immagine rounded-b-3xl md:rounded-r-3xl md:rounded-b-none'>
+    <div class='w-full md:w-6/12 immagine rounded-r-3xl md:rounded-r-3xl '>
     </div>
 </div>
   
@@ -86,19 +86,15 @@
   </p>
 
   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-    <!-- Card 1 -->
     <div class="bg-white rounded-xl shadow-lg overflow-hidden">
       <img src="/images/baccala.jpg" alt="Ricetta 1" class="w-full h-150 object-cover">
     </div>
-    <!-- Card 2 -->
     <div class="bg-white rounded-xl shadow-lg overflow-hidden">
       <img src="/images/carzucca.jpg" alt="Ricetta 2" class="w-full h-150 object-cover">
     </div>
-    <!-- Card 3 -->
     <div class="bg-white rounded-xl shadow-lg overflow-hidden">
       <img src="/images/spinazucca.jpg" alt="Ricetta 3" class="w-full h-150 object-cover">
     </div>
-    <!-- Card 4 -->
     <div class="bg-white rounded-xl shadow-lg overflow-hidden">
       <img src="/images/burgher.jpg" alt="Ricetta 4" class="w-full h-150 object-cover">
     </div>
@@ -112,7 +108,50 @@
   </button>
 </div>
 
-<div class="justify-center">   
+<div class="flex flex-col items-center my-10">
+  <h2 class="text-5xl font-bold text-black mb-8">Le nostre Diete</h2>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full max-w-screen-lg">
+    <!-- Dieta Vegana -->
+    <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+      <img src="https://www.chietitoday.it/~media/horizontal-hi/32238391583075/vegano-2.jpg" alt="Dieta Vegana" class="w-full h-56 object-cover">
+      <div class="p-4 bg-gradient-to-b from-white to-[#439953]">
+        <h3 class="text-xl font-semibold mb-1">Dieta Vegana</h3>
+        <div class='flex flex-row gap-3'>
+        <img src='https://cdn-icons-png.flaticon.com/512/45/45552.png' class='w-6'>
+        <p class="text-gray-600 text-sm">Verdure</p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Dieta Onnivora -->
+    <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+      <img src="https://www.menatti.com/app/uploads/2023/09/dieta-plant-based-onnivora-salute.jpg" alt="Dieta Onnivora" class="w-full h-56 object-cover">
+      <div class="p-4 bg-gradient-to-b from-white to-[#439953]">
+        <h3 class="text-xl font-semibold mb-1">Dieta Onnivora</h3>
+        <div class='flex flex-row gap-3'>
+        <img src='https://cdn-icons-png.flaticon.com/512/45/45552.png' class='w-6'>
+        <p class="text-gray-600 text-sm">Dieta mista</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dieta Celiaca -->
+    <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+      <img src="https://leganerd.com/wp-content/uploads/2023/03/gluten.jpg?width=1280&height=720&quality=20" alt="Dieta Celiaca" class="w-full h-56 object-cover">
+      <div class="p-4 bg-gradient-to-b from-white to-[#439953]">
+        <h3 class="text-xl font-semibold mb-1">Dieta Celiaca</h3>
+        <div class='flex flex-row gap-3'>
+        <img src='https://cdn-icons-png.flaticon.com/512/45/45552.png' class='w-6'>
+        <p class="text-gray-600 text-sm">Gluten Free</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="justify-center mt-10">   
     <h2 class="text-5xl text-center font-bold text-black mb-4">Consegne a domicilio</h2>
     
     <img src="/images/deliver.png" alt="Ricetta 4" class="md:w-150 md:h-150 w-80 h-80 mx-auto mt-20 object-cover">
@@ -121,6 +160,8 @@
   </p>
     
 </div>
+
+
 </div>
 
 
