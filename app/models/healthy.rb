@@ -1,0 +1,2 @@
+class Healthy < ApplicationRecord
+end

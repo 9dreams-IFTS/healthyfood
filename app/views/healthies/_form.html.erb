@@ -1,0 +1,32 @@
+<%= form_with(model: healthy, class: "contents") do |form| %>
+  <% if healthy.errors.any? %>
+    <div id="error_explanation" class="bg-red-50 text-red-500 px-3 py-2 font-medium rounded-md mt-3">
+      <h2><%= pluralize(healthy.errors.count, "error") %> prohibited this healthy from being saved:</h2>
+
+      <ul class="list-disc ml-6">
+        <% healthy.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="my-5">
+    <%= form.label :titolo %>
+    <%= form.text_field :titolo, class: ["block shadow-sm rounded-md border outline-hidden px-3 py-2 mt-2 w-full", {"border-gray-400 focus:outline-blue-600": healthy.errors[:titolo].none?, "border-red-400 focus:outline-red-600": healthy.errors[:titolo].any?}] %>
+  </div>
+
+  <div class="my-5">
+    <%= form.label :descrizione %>
+    <%= form.textarea :descrizione, rows: 4, class: ["block shadow-sm rounded-md border outline-hidden px-3 py-2 mt-2 w-full", {"border-gray-400 focus:outline-blue-600": healthy.errors[:descrizione].none?, "border-red-400 focus:outline-red-600": healthy.errors[:descrizione].any?}] %>
+  </div>
+
+  <div class="my-5">
+    <%= form.label :prezzo %>
+    <%= form.text_field :prezzo, class: ["block shadow-sm rounded-md border outline-hidden px-3 py-2 mt-2 w-full", {"border-gray-400 focus:outline-blue-600": healthy.errors[:prezzo].none?, "border-red-400 focus:outline-red-600": healthy.errors[:prezzo].any?}] %>
+  </div>
+
+  <div class="inline">
+    <%= form.submit class: "rounded-md px-3.5 py-2.5 bg-blue-600 hover:bg-blue-500 text-white inline-block font-medium cursor-pointer" %>
+  </div>
+<% end %>

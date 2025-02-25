@@ -1,0 +1,2 @@
+module HealthiesHelper
+end

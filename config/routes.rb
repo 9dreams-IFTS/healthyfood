@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :healthies
   get '/home', to: 'home#index', as:"home"
   get '/pisto', to: 'home#pisto' , as:"pisto"
   get '/ricette', to:'home#ricette', as:'ricette'
