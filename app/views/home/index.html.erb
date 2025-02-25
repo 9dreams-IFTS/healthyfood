@@ -60,6 +60,46 @@
     <div class='w-full md:w-6/12 immagine rounded-r-3xl md:rounded-r-3xl '>
     </div>
 </div>
+
+<h1 class='text-4xl text-black mx-auto my-10'>Le Sezioni</h1>
+
+<div class='flex flex-row gap-5 w-11/12 mx-auto'>
+
+      <%= render partial:'card',
+            locals: {
+              immagine: 'https://cdn.prod.website-files.com/6214dbeb0bc91b35790477f3/667d65a8f3d633f084b5e64b_2bd121ff-d73e-4158-a7be-477251e23156.webp',
+              titolo:'Ricette',
+              testo:'Le migliori ricette Healthy in TUTTO IL MONDO.',
+              link:'/ricette'
+            }
+      %>
+
+      <%= render partial:'card',
+            locals: {
+              immagine: 'https://rockfork.it/wp-content/uploads/2022/09/Healthy_food_delivery_milano.jpeg',
+              titolo:'Consegne',
+              testo:'Consegne rapidi e efficienti, a bassissimo costo!!',
+              link:'/consegne'
+            }
+      %>
+      <%= render partial:'card',
+            locals: {
+              immagine: 'https://ilfattoalimentare.it/wp-content/uploads/2025/01/alimentazione-salutare-Depositphotos_152104158_L.jpg',
+              titolo:'Diete',
+              testo:'Le diete migliori per mettersi subito in forma!',
+              link:'/diete'
+            }
+      %>
+      <%= render partial:'card',
+            locals: {
+              immagine: 'https://i.pinimg.com/736x/3d/54/15/3d5415f17ad0e90d4603202651dd12c1.jpg',
+              titolo:'Contatti',
+              testo:'Contatta il nostro team di esperti per qualsiasi esigenza.',
+              link:'/contatti'
+            }
+      %>
+
+</div>
   
   <div class='flex flex-col justify-center items-center mt-15 mb-25 px-5'>
    <h1 class='font-extrabold text-4xl mb-10 text-center'>Tipi di Piatti</h1>

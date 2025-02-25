@@ -3,4 +3,12 @@ class HomeController < ApplicationController
     end
     def pisto
     end
+    def ricette
+    end
+    def consegne
+    end
+    def diete
+    end
+    def contatti
+    end
 end
